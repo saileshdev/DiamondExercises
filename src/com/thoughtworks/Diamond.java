@@ -13,6 +13,12 @@ public class Diamond {
         reverseDraw(numberOfLines);
     }
 
+    public void drawCenterTriangle(int numberOfLines){
+        for(int i = 0; i < numberOfLines - 1 ; i++) {
+            drawCenterLine(i, numberOfLines);
+        }
+    }
+
     public void drawCenterLine(int i, int numberOfLines){
         int numberOfSpaces = numberOfSpaces(i, numberOfLines);
         int numAsterisk = findNumberOfAsterisk(i);
@@ -22,7 +28,7 @@ public class Diamond {
         System.out.println();
     }
 
-    private void reverseDraw(int numberOfLines){
+    public void reverseDraw(int numberOfLines){
 
         for(int i = numberOfLines - 2; i >= 0 ; i--) {
             drawCenterLine(i, numberOfLines);

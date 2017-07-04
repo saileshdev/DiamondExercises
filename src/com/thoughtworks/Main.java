@@ -15,5 +15,10 @@ public class Main {
         System.out.println("Question: Draw diamond to the console(Ex: n=3)");
         diamond.drawDiamond(3);
 
+        DiamondWithName diamondWithName = new DiamondWithName();
+
+        System.out.println("Question: Draw a centerd diamond with a name in place of the middle line(Ex: n=3)");
+        diamondWithName.drawDiamondWithName(3);
+
     }
 }
