@@ -25,7 +25,7 @@ public class PrintIsoscelesTriangleTest {
     public void shouldPrintIsoscelesTriangleInConsole(){
 
         System.setOut(new PrintStream(outputStream));
-        String expected = "  *  \n *** \n*****";
+        String expected = "  *\n ***\n*****\n";
 
         isoscelesTriangle.drawCenterTriangle(3);
         assertEquals(outputStream.toString(), expected);
